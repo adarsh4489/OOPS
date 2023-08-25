@@ -1,5 +1,7 @@
 //constructors are called by default when we declare an object
 //constructors are of 3 types default,parameterized,copy constructor
+//destructors are same as constructor
+// for static objects destructors are called automatically but for dynamic allocations we have to call destructors manually. 
 
 #include<iostream>
 using namespace std;
@@ -34,6 +36,12 @@ hero(int health){
     cout<<"coppy constructor is called"<<endl;
  }
 
+ //destructor
+~hero(){
+    cout<<"destructor called"<<endl;
+}
+
+
 };
 
 int main()
@@ -42,12 +50,13 @@ int main()
 hero h1;
 h1.print();  //default const
 
-hero h2(60);
-h2.print();           //parameterised const
+// hero h2(60);
+// h2.print();           //parameterised const
 
-hero cp(h2);
-cp.print();   //coppy constr
+// hero cp(h2);
+// cp.print();   //coppy constr
 
 
     return 0;
 }
+
