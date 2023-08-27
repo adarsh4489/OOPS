@@ -2,9 +2,11 @@
 
 // *******static member function ******
 
+//there are 5 types of member functions: simple ,static, const,inline,friend
 //static member functions me bhi object create krne ki jarurat ni hoti
 //this keywords are not used in static member fucntions
 // static member function can only access static data members
+// All the member functions defined inside the class definition are by default declared as Inline.
 
 #include<iostream>
 using namespace std;

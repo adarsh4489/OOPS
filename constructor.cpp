@@ -2,6 +2,10 @@
 //constructors are of 3 types default,parameterized,copy constructor
 //destructors are same as constructor
 // for static objects destructors are called automatically but for dynamic allocations we have to call destructors manually. 
+//constructors can be called multiple times but destructors are called only one time
+
+// *********************  Destructor   *****************
+// whenever we want to protect an object from get destructed we use private destructor by using private destructor it cant destruct the object which are locally created as it is private
 
 #include<iostream>
 using namespace std;
